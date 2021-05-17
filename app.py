@@ -1043,5 +1043,5 @@ def render_content(tab):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False, const port = Process.env.PORT || 3000)
+    app.run_server(debug=False)
 
