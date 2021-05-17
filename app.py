@@ -7,7 +7,6 @@ import numpy as np
 
 from datetime import date
 import plotly.express as px
-#Cluster analysis 2017 (Typical Electrical patterns in 2017)python -V
 #______________________________________________________________________________________
 #### Import 2017 data
 df_2017 = pd.read_csv('IST_Central_2017.csv')
@@ -197,18 +196,18 @@ cvRMSE_BT=RMSE_BT/np.mean(y_test)
 #____________________________________________________________________________________________________________________
 #8) Neural Network
 
-from sklearn.neural_network import MLPRegressor
+#from sklearn.neural_network import MLPRegressor
 
-NN_model = MLPRegressor(hidden_layer_sizes=(10,10,10,10))
-NN_model.fit(X_train,y_train)
-y_pred_NN = NN_model.predict(X_test)
+#NN_model = MLPRegressor(hidden_layer_sizes=(10,10,10,10))
+#NN_model.fit(X_train,y_train)
+#y_pred_NN = NN_model.predict(X_test)
 
 
 #Evaluate errors
-MAE_NN=metrics.mean_absolute_error(y_test,y_pred_NN)
-MSE_NN=metrics.mean_squared_error(y_test,y_pred_NN)
-RMSE_NN= np.sqrt(metrics.mean_squared_error(y_test,y_pred_NN))
-cvRMSE_NN=RMSE_NN/np.mean(y_test)
+#MAE_NN=metrics.mean_absolute_error(y_test,y_pred_NN)
+#MSE_NN=metrics.mean_squared_error(y_test,y_pred_NN)
+#RMSE_NN= np.sqrt(metrics.mean_squared_error(y_test,y_pred_NN))
+#cvRMSE_NN=RMSE_NN/np.mean(y_test)
 #_____________________________________________________________________________________________________________________
 #_____________________________________________________________________________________________________________________
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.YETI])
