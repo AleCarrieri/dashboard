@@ -682,7 +682,7 @@ def render_content(tab):
         return html.Div([
             dbc.Row([
                 dbc.Col(html.Iframe(
-                    src="http://in-learning.ist.utl.pt/embed/IST/01-Central/01.html",
+                    src="http://in-learning.ist.utl.pt/embedIST/01-Central/01/index.html",
                     style={"height": "1060px", "width": "1000px"}), ),
                 dbc.Col(html.Iframe(
                     src="https://3dwarehouse.sketchup.com/model/e8beccd1fe605d566054aafaa5dde650/Instituto-Superior-T%C3%A9cnico-Pavilh%C3%A3o-Central?hl=it.html",
