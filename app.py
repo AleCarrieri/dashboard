@@ -211,7 +211,7 @@ RMSE_NN= np.sqrt(metrics.mean_squared_error(y_test,y_pred_NN))
 cvRMSE_NN=RMSE_NN/np.mean(y_test)
 #_____________________________________________________________________________________________________________________
 #_____________________________________________________________________________________________________________________
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes.YETI])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.YETI])
 server = app.server
 
 # the style arguments for the sidebar. I use position:fixed and a fixed width
